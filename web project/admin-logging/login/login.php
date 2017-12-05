@@ -1,44 +1,52 @@
 <?php
 	session_start();
 
-							include('../connection.php');
-						$connection = new createConnection();
-						$connection_ref = $connection->connectToDatabase();
+	include('../connection.php');
+					
 
   if (isset($_POST['submit']))
 	{
+		$errors = array();
 
-		if (empty($_POST['username']) || empty($_POST['password']))
+		if (empty($_POST['username']))
 		{
-			header("Location: index.php");
+			$errors[] = 'You forgot to enter your username';
+			
 		}
-		else
 
+		if (empty($_POST['password']))
 		{
+			$errors[] = "you forgot to enter your password";
+		}
+		
+		if (!empty($errors)){
+
 			$username=$_POST['username'];
 			$password=$_POST['password'];
 
-			//this is used to prevent sqli
-			$username = stripslashes($username);
-			$password = stripslashes($password);
-			$username = mysqli_real_escape_string($connection_ref,$username);
-			$password = md5(mysqli_real_escape_string($connection_ref,$password));
+			//this is used to prevent sql injections
+
+			$username = mysqli_real_escape_string($myConn,trim(stripslashes($username)));
+			$password = mysqli_real_escape_string($myConn,trim(stripslashes($password)));
+			$password = hash('sha256', $password);
+
+			$q = "select * from Users where NIC='$username' ";
+			$query = mysqli_query($myConn, $q);
+			$arr =  mysqli_fetch_array($query);
+			
+			if ($q){
+			
+				if($arr['NIC']==$username && $arr['Password'] . $arr['Salt']==$password . $arr['Salt']){
+					set;
 
 
-			$query = mysqli_query($connection_ref, "select * from admin_log where password='$password' AND username='$username' ")or die(mysql_error());
-			$rows = mysqli_num_rows($query);
-
-			if ($rows == 1)
-			{
-				$_SESSION['login_user']=$username;
-				header("Location: ../");
+				}else{
+					echo "";
+				}
 			}
-			else
-			{
 
-				header("Location: index.php");
-			}
-			mysql_close($connection);
+
 		}
+
 	}
 ?>
