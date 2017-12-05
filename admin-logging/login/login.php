@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/nortification.css">
+</head> 
+<body>
 <?php
 	session_start();
 
@@ -33,20 +40,40 @@
 			$q = "select * from Users where NIC='$username' ";
 			$query = mysqli_query($myConn, $q);
 			$arr =  mysqli_fetch_array($query);
+			//checking number of rows affected
 			
-			if ($q){
+			if ($q && mysqli_affected_rows($myConn)==1){
 			
 				if($arr['NIC']==$username && $arr['Password'] . $arr['Salt']==$password . $arr['Salt']){
-					echo "bit";
+					//hashing nic 
+					setcookie('NIC', 
+					md5($arr['NIC']));
+					setcookie('Uname', $arr['Uname']);
+
+					header('Location: ../../index.php');
+					echo '<div class="alert-box success"><span> Login Successful!: </span>Write your success message here.</div>';
 
 
 				}else{
-					echo "wrong";
+					$errors[] = "NIC and Password does not match";
+					
 				}
 			}
+			
 
 
 		}
 
+		echo '<div class="alert-box error"><span>error: </span>';
+		foreach ($errors as $e) {
+			echo "$e <br>\n";
+		
+		}
+		echo "</div>";
+
 	}
 ?>
+
+
+</body>
+</html>
