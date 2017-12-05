@@ -1,11 +1,11 @@
 <div class="container">
     <div class="card card-container">
      
-        <img id="profile-img" class="profile-img-card" src="images\login.png" />
+        <img id="profile-img" class="profile-img-card" src="../web project/images/login.png" />
         <p id="profile-name" class="profile-name-card"></p>
-        <form action="login"method="post"class="form-signin">
-            <span id="reauth-email" class="reauth-email"></span>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <form class="form-signin">
+            <span id="reauth-NIC" class="reauth-NIC"></span>
+            <input type="NIC" id="inputNIC" class="form-control" placeholder="NIC Number" required autofocus>
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
             <div id="remember" class="checkbox">
                 <label>
@@ -81,7 +81,7 @@ body, html {
     min-height: 1em;
 }
 
-.reauth-email {
+.reauth-NIC {
     display: block;
     color: #404040;
     line-height: 2;
@@ -90,20 +90,20 @@ body, html {
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
-   
+    white-space: nowrap;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.form-signin #inputEmail,
+.form-signin #inputNIC,
 .form-signin #inputPassword {
     direction: ltr;
     height: 44px;
     font-size: 16px;
 }
 
-.form-signin input[type=email],
+.form-signin input[type=NIC],
 .form-signin input[type=password],
 .form-signin input[type=text],
 .form-signin button {
