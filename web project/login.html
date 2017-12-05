@@ -3,16 +3,16 @@
      
         <img id="profile-img" class="profile-img-card" src="../web project/images/login.png" />
         <p id="profile-name" class="profile-name-card"></p>
-        <form class="form-signin">
+        <form action='admin-logging/login/login.php' method="POST" class="form-signin">
             <span id="reauth-NIC" class="reauth-NIC"></span>
-            <input type="NIC" id="inputNIC" class="form-control" placeholder="NIC Number" required autofocus>
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <input type="NIC" id="inputNIC" name="username" class="form-control" placeholder="NIC Number" required autofocus>
+            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
             <div id="remember" class="checkbox">
                 <label>
                     <input type="checkbox" value="remember-me"> Remember me
                 </label>
             </div>
-            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" name="submit" type="submit">Sign in</button>
         </form>
         <a href="#" class="forgot-password">
             Forgot the password?

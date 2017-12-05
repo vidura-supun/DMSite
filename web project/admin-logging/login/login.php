@@ -4,7 +4,7 @@
 	include('../connection.php');
 					
 
-  if (isset($_POST['submit']))
+  if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		$errors = array();
 
@@ -19,7 +19,7 @@
 			$errors[] = "you forgot to enter your password";
 		}
 		
-		if (!empty($errors)){
+		if (empty($errors)){
 
 			$username=$_POST['username'];
 			$password=$_POST['password'];
@@ -37,11 +37,11 @@
 			if ($q){
 			
 				if($arr['NIC']==$username && $arr['Password'] . $arr['Salt']==$password . $arr['Salt']){
-					set;
+					echo "bit";
 
 
 				}else{
-					echo "";
+					echo "wrong";
 				}
 			}
 
