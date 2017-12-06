@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>	
 		<title>Registration</title>
@@ -29,8 +30,8 @@
 						  		<input type="text" name="Uname" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" >
 						  		<input type="text" name="District" value="Postal Zip Code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'eg-10280(Maharagama)';}" >
 						  		<input type="text" name="username" value="User Name:NIC" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NIC';}" >
-								<input type="password" id="password" name="Password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
-								<input type="password" id="confirm_password" value=" Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Confirm Password';}" >
+								<input type="password" id="password" placeholder="password" name="Password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
+								<input type="password" id="confirm_password" placeholder="Confirm password" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Confirm Password';}" >
 								 <div class="Remember-me">
 								<div class="p-container">
 								<label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>I agree to the Terms and Conditions</label>
@@ -68,4 +69,3 @@ confirm_password.onkeyup = validatePassword;
 			  </div>
 	</body>
 </html>
-
