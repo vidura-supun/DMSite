@@ -89,7 +89,7 @@ table a:hover{background:aqua;text-decoration:none;}
 				<div class="page-header">
 					<?php
 						$num_rec_per_page=5;
-						include('../connection.php');
+						include(' ../connection.php ');
 						$connection = new createConnection();
 						$connection_ref = $connection->connectToDatabase();
 
@@ -110,7 +110,7 @@ table a:hover{background:aqua;text-decoration:none;}
 						$num_fields=mysqli_num_fields($rs_result);
 						if(isset($_GET['id']))
 						{
-   							@mysqli_query($connection_ref, "DELETE FROM ".$selected_table_name." WHERE id = '".$_GET['id']."'");
+   							@mysqli_query($connection_ref, "DELETE FROM " .$selected_table_name. " WHERE id = '".$_GET['id']."'");
    							header("location:index.php");
    							exit();
 						}
