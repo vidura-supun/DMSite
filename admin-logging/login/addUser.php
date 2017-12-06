@@ -1,73 +1,74 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>	
+		<title>Registration</title>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<link href='http://fonts.googleapis.com/css?family=Lobster|Pacifico:400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500italic,500' ' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
+		<!--webfonts-->
+	</head>
+	<body>	
+			<!--start-login-form-->
+				<div class="main">
 
+					<style>
+							h1.sansserif {
+								font-family: Arial, Helvetica, sans-serif;
+					</style>
+			    	<div class="login-head">
+					    <h1 class="sansserif">Vipathlk User Registration</h1>
+					</div>
+					<div  class="wrap">
+						  <div class="Regisration">
+						  	<div class="Regisration-head">
+						    	<h2><span></span>Register</h2>
+						 	 </div>
+						  	<form action="register.php" method="POST">
+						  		<input type="text" name="Uname" value="Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Full Name';}" >
+						  		<input type="text" name="District" value="Postal Zip Code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'eg-10280(Maharagama)';}" >
+						  		<input type="text" name="username" value="User Name:NIC" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NIC';}" >
+								<input type="password" id="password" name="Password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
+								<input type="password" id="confirm_password" value=" Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Confirm Password';}" >
+								 <div class="Remember-me">
+								<div class="p-container">
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>I agree to the Terms and Conditions</label>
+								<div class ="clear"></div>
+							</div>
+												 
+								<div class="submit">
+									<input type="submit" onclick="myFunction()" value="Register" >
+								</div>
+									<div class="clear"> </div>
+								</div>
+											
+						  </form>
+					</div>
+<script>
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
 
-<head>
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
 
-	<title>Vipath.lk</title>
-
-</head>
-<body >
-
-						<form action="register.php" method="POST">
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+							</script>
 
 					
-
-						<table width="400" border="10" align="center" bgcolor="white">
-
-							<tr>
-								<td bgcolor="white" colspan="4" align="center"><h1>Admin Login form</h1></td>
-							</tr>
-
-							<tr>
-							<td> NIC </td>
-							<td> <input type="text" name="username" placeholder="username"  value="admin"> </td>
-							</tr>
-
-						<br>
-                        <tr>
-								<td bgcolor="white" colspan="4" align="center"><h1>Admin Login form</h1></td>
-							</tr>
-
-							<tr>
-							<td> Full Name:</td>
-							<td> <input type="text" name="Uname" placeholder="Full name"  value="admin"> </td>
-							</tr>
-                        <br>
-                        <tr>
-								<td bgcolor="white" colspan="4" align="center"><h1>Admin Login form</h1></td>
-							</tr>
-
-							<tr>
-							<td> District: </td>
-							<td> <input type="text"  name="District" placeholder="username"  value="admin"> </td>
-							</tr>
-                        <br>
-
-							<tr>
-							<td>Password </td>
-							<td><input type="password" id="password" name="Password" placeholder="*******"  value="admin" ></td>
-						  </tr>
-
-						<br>
-
-                        <tr>
-								<td bgcolor="white" colspan="4" align="center"><h1>Admin Login form</h1></td>
-							</tr>
-
-							<tr>
-							<td> Confirm Password: </td>
-							<td> <input type="text" id="name" name="" placeholder="username"  value="admin"> </td>
-							</tr>
-                        <br>
-
-							<tr align="center" >
-						  <td colspan="2"><input type='submit' name='submit' class="info "  value="LOGIN"> </td>
-							</tr>
-						<br>
-					</table>
-					</form>
-  </div>
-</body>
+						
+			
+						
+			  </div>
+	</body>
 </html>
+
 

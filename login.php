@@ -1,173 +1,56 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-<link rel="stylesheet" type="text/css" href="css/nortification.css">
-</head>
-<body>
-<?php 
+	<head>	
+		<title>login</title>
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		
+		<link href='http://fonts.googleapis.com/css?family=Lobster|Pacifico:400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500italic,500' ' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
+		<!--webfonts-->
+	</head>
+	<body>
+	<?php 
     include('admin-logging/connection.php');
     require_once('admin-logging/login/login.php')
-?>
+	?>	
+		
+					<div class="Login">
+							<div class="Login-head">
+						    	<h3>LOGIN</h3>
+						 	</div>
 
-<div class="container">
+						<form action='login.php' method="POST">
+								<div class="ticker">
+									<h4>Username</h4>
+						  			<input type="text" value="NIC" name="username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NIC';}" ><span> </span>
+						  			<div class="clear"> </div>
+						  		</div>
+						  		<div>
+						  		<h4>Password</h4>
+								<input type="password" value="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
+								  			<div class="clear"> </div>
+								</div>
+								<div class="checkbox-grid">
+									<div class="inline-group green">
+									<label class="radio"><input type="radio" name="radio-inline"><i> </i>Remember me</label>
+									<div class="clear"> </div>
+									</div>
 
-    
-    <div class="card card-container">
-     
-        <img id="profile-img" class="profile-img-card" src="images/login.png" />
-        <p id="profile-name" class="profile-name-card"></p>
-        <form action='login.php' method="POST" class="form-signin">
-            <span id="reauth-NIC" class="reauth-NIC"></span>
-            <input type="NIC" id="inputNIC" name="username" class="form-control" placeholder="NIC Number" required autofocus>
-            <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <div id="remember" class="checkbox">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block btn-signin" name="submit" type="submit">Sign in</button>
-        </form>
-        
-    </div>
-</div>
-</body>
-
-<style>
-
-body, html {
-    height: 100%;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
-}
-
-.card-container.card {
-    max-width: 350px;
-    padding: 40px 40px;
-}
-
-.btn {
-    font-weight: 700;
-    height: 36px;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: default;
-}
-
-/*
- * Card component
- */
-.card {
-    background-color: #F7F7F7;
-    /* just in case there no content*/
-    padding: 20px 25px 30px;
-    margin: 0 auto 25px;
-    margin-top: 50px;
-    /* shadows and rounded borders */
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    border-radius: 2px;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.profile-img-card {
-    width: 96px;
-    height: 96px;
-    margin: 0 auto 10px;
-    display: block;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-}
-
-/*
- * Form styles
- */
-.profile-name-card {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px 0 0;
-    min-height: 1em;
-}
-
-.reauth-NIC {
-    display: block;
-    color: #404040;
-    line-height: 2;
-    margin-bottom: 10px;
-    font-size: 14px;
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.form-signin #inputNIC,
-.form-signin #inputPassword {
-    direction: ltr;
-    height: 44px;
-    font-size: 16px;
-}
-
-.form-signin input[type=NIC],
-.form-signin input[type=password],
-.form-signin input[type=text],
-.form-signin button {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-    z-index: 1;
-    position: relative;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.form-signin .form-control:focus {
-    border-color: rgb(104, 145, 162);
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
-}
-
-.btn.btn-signin {
-
-    background-color: rgb(104, 145, 162);
-
-    padding: 0px;
-    font-weight: 700;
-    font-size: 14px;
-    height: 36px;
-    border-radius: 3px;
-    border: none;
-    -o-transition: all 0.218s;
-    -moz-transition: all 0.218s;
-    -webkit-transition: all 0.218s;
-    transition: all 0.218s;
-}
-
-.btn.btn-signin:hover,
-.btn.btn-signin:active,
-.btn.btn-signin:focus {
-    background-color: rgb(12, 97, 33);
-}
-
-.forgot-password {
-    color: rgb(104, 145, 162);
-}
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-
-.forgot-password:hover,
-.forgot-password:active,
-.forgot-password:focus{
-    color: rgb(12, 97, 33);
-}
-</style>
+								</div>
+												 
+								<div class="submit-button">
+									<input type="submit" onclick="myFunction()" value="LOGIN  >" >
+								</div>
+									<div class="clear"> </div>
+								</div>
+											
+						  </form>
+					</div>
+			</div>
+				
+						
+			  </div>
+	</body>
+</html>
