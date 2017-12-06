@@ -1,14 +1,12 @@
-
-<!DOCTYPE html>
 <html>
 	<head>	
 		<title>Registration</title>
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="../../css/style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!--webfonts-->
 		<link href='http://fonts.googleapis.com/css?family=Lobster|Pacifico:400,700,300|Roboto:400,100,100italic,300,300italic,400italic,500italic,500' ' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family='Raleway:400,100,500,600,700,300' rel='stylesheet' type='text/css'>
 		<!--webfonts-->
 	</head>
 	<body>	
@@ -17,7 +15,7 @@
 
 					<style>
 							h1.sansserif {
-								font-family: Arial, Helvetica, sans-serif;
+								font-family: Arial, Helvetica, sans-serif;}
 					</style>
 			    	<div class="login-head">
 					    <h1 class="sansserif">Vipathlk User Registration</h1>
@@ -49,7 +47,7 @@
 					</div>
 <script>
 var password = document.getElementById("password")
-  , confirm_password = document.getElementById("confirm_password");
+  confirm_password = document.getElementById("confirm_password");
 
 function validatePassword(){
   if(password.value != confirm_password.value) {
@@ -70,5 +68,4 @@ confirm_password.onkeyup = validatePassword;
 			  </div>
 	</body>
 </html>
-
 
