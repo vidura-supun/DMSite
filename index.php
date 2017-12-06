@@ -118,9 +118,17 @@
             <div class="container">
                 <h2 class="section-header">
                     <span class="glyphicon glyphicon-pushpin text-primary"></span>
-                    <br> Check if you're safe</h2>
+                    <br>Check if you're safe</h2>
                 <p class="lead text-muted">send your location to us and know that if you're safe from any natural disaster or incident from your area</p>
-                <a href="#" class="btn btn-primary btn-lg">Check Now</a>
+                <form action="safe.php" method="post">
+                	<table align="center">
+                		<tr>
+                			<td><h2><input type="text" name="danger"></h2></td>
+                			<td><p>&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
+                			<td><input type="submit" name="" class="btn btn-primary btn-lg" value="Check Now"></td>
+                		</tr>
+                	</table>
+                </form>
             </div>
             </div>
         </section>
