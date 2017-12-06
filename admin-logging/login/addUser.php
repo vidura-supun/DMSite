@@ -1,13 +1,7 @@
-<?php
-	session_start();
-	if(isset($_SESSION['login_user'])){
-header("location: ../");
-}
-else
-{
-?>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
+
 <head>
 
 	<title>Vipath.lk</title>
@@ -76,6 +70,4 @@ else
   </div>
 </body>
 </html>
-<?php
-}
-?>
+

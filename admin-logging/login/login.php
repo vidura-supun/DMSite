@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-<link rel="stylesheet" type="text/css" href="../../css/nortification.css">
-</head> 
-<body>
+ 
 <?php
-	session_start();
 
-	include('../connection.php');
+
+	
 					
 
   if ($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -45,14 +39,18 @@
 			if ($q && mysqli_affected_rows($myConn)==1){
 			
 				if($arr['NIC']==$username && $arr['Password'] . $arr['Salt']==$password . $arr['Salt']){
-					//hashing nic 
-					setcookie('NIC', 
-					md5($arr['NIC']));
-					setcookie('Uname', $arr['Uname']);
+					
+					
+					session_start();
+					$_SESSION["NIC"]= 
+					$arr['NIC'];
+					$_SESSION ['Uname']= 
+					$arr['Uname'];
 
-					header('Location: ../../index.php');
-					echo '<div class="alert-box success"><span> Login Successful!: </span>Write your success message here.</div>';
+					
 
+					header('Location: /DMSite/index.php');
+					
 
 				}else{
 					$errors[] = "NIC and Password does not match";

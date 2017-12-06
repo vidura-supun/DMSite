@@ -1,4 +1,6 @@
-
+<?php 
+    session_start();
+?>
 <html>
     
     <head>
@@ -70,13 +72,30 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="..\web project\login.html"><font color="yellowgreen">Login</a>
-                        </li>
+                        <?php 
+                            
+                        
+                            if(isset($_SESSION['NIC'])){
+                                echo '<a href="/DMSite/admin-logging/login/logout.php"><p style="color:yellowgreen">Logout</p></a></li>';
+                                
+                        }else{
+                            echo '<a href="login.php"><p style="color:yellowgreen">Login</p></a></li>';
+                        }    
+
+                        ?>
+                          
+                        
+                        
                     </ul>
                     
                 </div><!-- /.navbar-collapse -->
-            </div><!-- /.container -->
+                <?php
+            if(isset($_SESSION['NIC'])){
+            echo '<div style="text-align:left"><a href="/DMSite/users/listPosts.php"><p  style="color:#f1c40f">Hi! '. $_SESSION['Uname'] . '</p></a></div>';}
+            ?>
         </nav>
+            </div><!-- /.container -->
+            
     
         <header>
             <div class="header-content">

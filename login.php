@@ -1,10 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/nortification.css">
+</head>
+<body>
+<?php 
+    include('admin-logging/connection.php');
+    require_once('admin-logging/login/login.php')
+?>
+
 <div class="container">
+
     
     <div class="card card-container">
      
         <img id="profile-img" class="profile-img-card" src="images/login.png" />
         <p id="profile-name" class="profile-name-card"></p>
-        <form action='admin-logging/login/login.php' method="POST" class="form-signin">
+        <form action='login.php' method="POST" class="form-signin">
             <span id="reauth-NIC" class="reauth-NIC"></span>
             <input type="NIC" id="inputNIC" name="username" class="form-control" placeholder="NIC Number" required autofocus>
             <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
@@ -18,6 +31,7 @@
         
     </div>
 </div>
+</body>
 
 <style>
 
