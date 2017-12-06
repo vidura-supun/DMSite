@@ -1,4 +1,6 @@
-
+<?php 
+    session_start();
+?>
 <html>
     
     <head>
@@ -51,7 +53,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active">
-                            <a href="index.php">Home</a>
+                            <a href="..\web project\index.html">Home</a>
                         </li>
                         <li>
                            <a href="#"><font color="yellowgreen">about us</font> </a>
@@ -59,24 +61,41 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font color="yellowgreen">Disasters</font> <span class="caret"></span></a>
                             <ul class="dropdown-menu" aria-labelledby="about-us">
-                                <li><a href="droughts or water cuts.php">Drougts</a></li>
-                                <li><a href="floods.php">Floods</a></li>
-                                <li><a href="fires.php">Fires</a></li>
-                                <li><a href="landslides.php">Landslides</a></li>
-                                <li><a href="powercuts.php">Power Outages</a></li>
-                                <li><a href="storms.php">Storms</a></li>
-                                <li><a href="tsunami.php">Tsunami</a></li>
-                                <li><a href="accidents.php">Roadside Accidents</a></li>
+                                <li><a href="..\web project\droughts or water cuts.html">Drougts</a></li>
+                                <li><a href="..\web project\floods.html">Floods</a></li>
+                                <li><a href="..\web project\fires.html">Fires</a></li>
+                                <li><a href="..\web project\landslides.html">Landslides</a></li>
+                                <li><a href="..\web project\powercuts.html">Power Outages</a></li>
+                                <li><a href="..\web project\storms.html">Storms</a></li>
+                                <li><a href="..\web project\tsunami.html">Tsunami</a></li>
+                                <li><a href="..\web project\accidents.html">Roadside Accidents</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="login.php"><font color="yellowgreen">Login</a>
-                        </li>
+                        <?php 
+                            
+                        
+                            if(isset($_SESSION['NIC'])){
+                                echo '<a href="/DMSite/admin-logging/login/logout.php"><p style="color:yellowgreen">Logout</p></a></li>';
+                                
+                        }else{
+                            echo '<a href="login.php"><p style="color:yellowgreen">Login</p></a></li>';
+                        }    
+
+                        ?>
+                          
+                        
+                        
                     </ul>
                     
                 </div><!-- /.navbar-collapse -->
-            </div><!-- /.container -->
+                <?php
+            if(isset($_SESSION['NIC'])){
+            echo '<div style="text-align:left"><a href="/DMSite/users/listPosts.php"><p  style="color:#f1c40f">Hi! '. $_SESSION['Uname'] . '</p></a></div>';}
+            ?>
         </nav>
+            </div><!-- /.container -->
+            
     
         <header>
             <div class="header-content">
