@@ -1,3 +1,13 @@
+<?php 
+	
+	require_once('admin-logging/login/login.php');
+
+	$user = require_once('authCheck/adminCheck.php');
+	if($user=='admin' || $user=='user'){
+		header('Location: index.php');
+
+	}
+?>
 <!DOCTYPE html>
 <html>
 	<head>	
@@ -11,10 +21,7 @@
 		<!--webfonts-->
 	</head>
 	<body>
-	<?php 
-    include('admin-logging/connection.php');
-    require_once('admin-logging/login/login.php')
-	?>	
+	
 		
 					<div class="Login">
 							<div class="Login-head">
@@ -34,7 +41,7 @@
 								</div>
 								<div class="checkbox-grid">
 									<div class="inline-group green">
-									<label class="radio"><input type="radio" name="radio-inline"><i> </i>Remember me</label>
+									
 									<div class="clear"> </div>
 									</div>
 

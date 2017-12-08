@@ -27,8 +27,13 @@
             rel='stylesheet' type='text/css'>
     
     </head>
+    <?php
+ 
+ include('authCheck/adminCheck.php');
+
+?>
     
-    <body>
+    <body background="images/back.jpg">
     
         <!-- Navigation -->
         <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -46,38 +51,7 @@
                         Vipathlk
                     </a>
                 </div>
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active">
-                            <a href="..\web project\index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">about us</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Disasters <span class="caret"></span></a>
-                            <ul class="dropdown-menu" aria-labelledby="about-us">
-                                <li><a href="..\web project\droughts or water cuts.html">Drougts</a></li>
-                                <li><a href="..\web project\floods.html">Floods</a></li>
-                                <li><a href="..\web project\fires.html">Fires</a></li>
-                                <li><a href="..\web project\landslides.html">Landslides</a></li>
-                                <li><a href="..\web project\powercuts.html">Power Outages</a></li>
-                                <li><a href="..\web project\storms.html">Storms</a></li>
-                                <li><a href="..\web project\tsunami.html">Tsunami</a></li>
-                                <li><a href="..\web project\accidents.html">Roadside Accidents</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="..\web project\login.html">Login</a>
-                        </li>
-                    </ul>
-                    
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container -->
-        </nav>
-    
-     
+                
     
     
     
@@ -206,32 +180,6 @@
                     </ul>
     
     
-        <footer class="page-footer">
-    
-    
-            <div class="contact">
-                <div class="container">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <p>
-                        <span class="glyphicon glyphicon-earphone"></span>
-                        <br> +94 112 456 7890</p>
-                    <p>
-                        <span class="glyphicon glyphicon-earphone"></span>
-                        <br> +94 112 976 7890</p>
-                    <p>
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        <br> info@Vipath.lk</p>
-                </div>
-            </div>
-    
-    
-            <div class="small-print">
-                <div class="container">
-                    <p>Copyright &copy; Vipath.lk 2017</p>
-                </div>
-            </div>
-    
-        </footer>
     <!-- jQuery -->
     <script src="js/jquery-1.11.3.min.js"></script>
     
@@ -244,8 +192,11 @@
         <!-- Custom Javascript -->
         <script src="js/custom.js"></script>
         
-    
+
     
     </body>
     
     </html>
+    <?php
+include('footer.php');
+?>

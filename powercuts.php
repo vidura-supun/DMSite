@@ -2,7 +2,12 @@
 <head>
     <title>power cuts</title>
 </head>
-<body>
+<?php
+ 
+ include('authCheck/adminCheck.php');
+
+?>
+<body background="images/back.jpg">
     	<h1>Power outages</h1>
         <p>Most power outages will be over almost as soon as they begin, but some can last much longer - up to days or even weeks. Power outages are often caused by freezing rain, sleet storms and/or high winds which damage power lines and equipment. Cold snaps or heat waves can also overload the electric power system.</p>
         <p>During a power outage, you may be left without heating/air conditioning, lighting, hot water, or even running water. If you only have a cordless phone, you will also be left without phone service. If you do not have a battery-powered or crank radio, you may have no way of monitoring news broadcasts. In other words, you could be facing major challenges. </p>
@@ -90,3 +95,6 @@
 
 
 </html>
+<?php
+include('footer.php');
+?>

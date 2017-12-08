@@ -1,7 +1,12 @@
 <html>
 <head>
 </head>
-<body>
+<?php
+ 
+ include('authCheck/adminCheck.php');
+
+?>
+<body background="images/back.jpg">
 
 
     <p>When one strikes, visit our website and listen to the local media for severe weather warnings and advice. Keep a battery-powered or crank radio on hand as power outages can be frequent during severe storms. Everyone has a responsibility to protect their homes and their families. </p>
@@ -82,3 +87,6 @@
 
 </body>
 </html>
+<?php
+include('footer.php');
+?>

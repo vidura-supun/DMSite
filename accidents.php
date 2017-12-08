@@ -1,9 +1,16 @@
+<?php
+ 
+ include('authCheck/adminCheck.php');
+
+?>
 <html>
+
 
 <head>
 </head>
 
-<body>
+
+<body background="images/back.jpg">
 
 
     <p style="text-align: justify;">Road accidents are undoubtedly the most frequent and, overall, the cause of the most damage. The reasons for this are

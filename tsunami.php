@@ -1,5 +1,10 @@
 <html><head></head>
-    <body>
+<?php
+ 
+ include('authCheck/adminCheck.php');
+
+?>
+    <body background="images/back.jpg">
 <h1>Tsunamis</h1>
 <p>Tsunamis are a series of large waves that strike coastal areas. They can happen with little warning and result in flooding and damage to coastal communities. Thankfully, they are a rare event. Storm surges are more common. Residents, particularly those living in low-lying areas near the coastline, should prepare in advance. </p>
 <h3>Early warning signs of a tsunami</h3>
@@ -25,3 +30,6 @@
 
     </body>
 </html>
+<?php
+include('footer.php');
+?>

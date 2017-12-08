@@ -1,10 +1,6 @@
  
 <?php
-
-
-	
-					
-
+  require_once('admin-logging/connection.php');
   if ($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		$errors = array();
@@ -40,12 +36,15 @@
 			
 				if($arr['NIC']==$username && $arr['Password'] . $arr['Salt']==$password . $arr['Salt']){
 					
-					
+					if(!isset($_SESSION)){
 					session_start();
+					}
 					$_SESSION["NIC"]= 
 					$arr['NIC'];
 					$_SESSION ['Uname']= 
 					$arr['Uname'];
+					$_SESSION['P']=
+					$arr['permission'];	
 
 					
 

@@ -1,3 +1,10 @@
+
+<?php
+ 
+ include('authCheck/adminCheck.php');
+
+?>
+<body background="images/back.jpg">
 <div class="field field-name-body field-type-text-with-summary field-label-hidden">
     <div class="field-items">
         <div class="field-item even" property="content:encoded">
@@ -82,12 +89,4 @@
         </div>
     </div>
 </div>
-<div >
-    
-</div>
-</article>
-
-</section>
-</div>
-</section>
-</div>
+</body>
