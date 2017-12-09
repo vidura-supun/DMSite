@@ -12,12 +12,14 @@ if($user=='other'){
 <?php
 $subject=$_POST["subject"];
 $dtype=$_POST["dtype"];
+$dead=$_POST["dead"];
 $uid=$_POST["uid"];
 $lng=$_POST["lng"];
 $lat=$_POST["lat"];
 $address=$_POST["address"];
 $description=$_POST["description"];
 echo "Your ID : ".$uid;?><br> <?php
+echo "Casualities : ".$dead;?><br> <?php
 echo "Disaster : ".$dtype;?><br> <?php
 echo "Address  : ".$address;?><br> <?php
 echo "Description: ".$description;
@@ -28,6 +30,7 @@ $_SESSION["description"]=$description;
 <form action="db_sample.php" method="post"><div align="left">
 <div>
 <input style="display:none" id="subject" name="subject" type="textbox" value=<?php echo "$subject"?>> <br>
+<input style="display:none" id="dead" name="dead" type="textbox" value=<?php echo "$dead"?>> <br>
 <input style="display:none" type="text" id="uid" name="uid" value=<?php echo "$uid"?>><br>
 <input style="display:none" type="text" id="dtype" name="dtype" value=<?php echo "$dtype"?>><br>
 <input style="display:none" type="text" id="lng" name="lng" value=<?php echo "$lng"?>>

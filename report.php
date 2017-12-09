@@ -58,10 +58,11 @@
 
 <div style="margin-left: 20px; ">
 <form action="edit.php" method="post"><div align="center"> <table align="center" style="margin-top:-30px;margin-bottom:-15px">
-  <h1 align="center"> <b> <u>ENTER THE INFORMATION </b></u> </h1>
+  <h1 align="center"> <b> ENTER THE INFORMATION </b></h1>
 
   <tr> <td><input style="display:none" id="uid" name="uid" type="text" placeholder="Enter your NIC" value=<?php echo $_SESSION['NIC'];?> > <br><br> </td> </tr>
   <tr><td>  SUBJECT: </td> <td> <input id="subject" name="subject" type="textbox" placeholder="heading (eg:fire in kandy)" required>  <br><br> </td> </tr>
+  <tr><td>  CASUALITIES: </td> <td> <input id="subject" name="dead" type="textbox" placeholder="Is there any casualities?" required>  <br><br> </td> </tr>
   <tr><td>  DESCRIPTION: </td> <td><textarea id="description" name="description" rows="4" cols="50" maxlength="400" placeholder="Enter Description" required></textarea>   <br><br> </td> </tr>
   <tr><td>ADDRESS: </td> <td><input id="address" name="address" type="textbox" style="" value="colombo">  <br><br> </td> </tr>
   <tr><td>TYPE :</td> <td> <select  name="dtype">

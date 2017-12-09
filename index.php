@@ -61,7 +61,7 @@
                 <p class="lead text-muted">send your location to us and know that if you're safe from any natural disaster or incident from your area</p>
                 <form action="safe.php" method="post">
                 	<table align="center">
-                		<tr>
+                		<tr style="padding-top: 30 px">
                 			<td><h2><input type="text" name="danger"></h2></td>
                 			<td><p>&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
                 			<td><input type="submit" name="" class="btn btn-primary btn-lg" value="Check Now"></td>
@@ -71,7 +71,7 @@
             </div>
             </div>
         </section>
-        <?php include('footer.php'); ?>
+     
     </body>
     
         
@@ -91,3 +91,7 @@
     
     
     </html>
+    <?php
+        include_once('graph.php');
+    ?>
+    <?php include('footer.php'); ?>

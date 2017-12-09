@@ -10,6 +10,7 @@
 
 $description=$_SESSION["description"];
 $subject=$_POST["subject"];
+$dead=$_POST["dead"];
 $dtype=$_POST["dtype"];
 $uid=$_POST["uid"];
 $lng=$_POST["lng"];
@@ -18,8 +19,8 @@ $address=$_POST["address"];
 
 require("admin-logging/db_connection.php");
 
-$sql = "INSERT INTO markers (uid ,subject, description , address, lat,lng,type,approval)
-VALUES ('$uid', '$subject' ,'$description' ,'$address',$lat,$lng,'$dtype','n')";
+$sql = "INSERT INTO markers (uid ,subject, description , address, lat,lng, type, approval, deaths)
+VALUES ('$uid', '$subject' ,'$description' ,'$address', $lat, $lng,'$dtype', 'n', '$dead')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";

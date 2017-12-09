@@ -28,9 +28,8 @@ table, th, td {
 
   echo "<table style='width:100%'>";
   echo "<tr>
-  <th>ID</th>
-  <th>Uid</th>
-  <th>Subject</th>
+  
+  <th>Type</th>
   <th>Description</th>
   <th>Address</th>
   <th>Type</th>
@@ -43,8 +42,7 @@ table, th, td {
       // output data of each row
       while($row = $result->fetch_assoc()) {
           echo "<tr>
-          <td> " . $row["id"]. " </td>
-          <td> " . $row["uid"]. "</td>
+          
           <td> " . $row["subject"] . " </td>
           <td> " . $row["description"] . "</td>
           <td> " . $row["address"]. "</td>
