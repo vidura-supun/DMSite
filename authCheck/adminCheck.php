@@ -4,6 +4,7 @@
     }
     $a='admin';
     $u='user';
+    $o='other';
     if(isset($_SESSION['P']) && is_numeric($_SESSION['P'])){
         if($_SESSION['P']==1){
             include_once('header.php');
@@ -22,6 +23,7 @@
     }else{
         
         include('navbar.php');
+        return $o;
     }
     
    

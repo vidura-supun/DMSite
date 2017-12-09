@@ -21,10 +21,10 @@
   <title></title>
 </head>
 <body>
-<nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation" style="opacity: 0.7;   background-color:black;">
           <div class="container">
               <!-- Vipathlk and responsive toggle -->
-              <div class="navbar-header">
+              <div class="navbar-header" ">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                       <span class="sr-only">Toggle navigation</span>
                       <span class="icon-bar"></span>

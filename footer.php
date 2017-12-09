@@ -1,5 +1,4 @@
 
-
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
@@ -16,11 +15,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
 
-<footer class="page-footer">
+<footer class="page-footer" >
 
 
-        <div class="contact" style="">
-            <div class="container">
+        <div class="contact" >
+            <div class="container" >
                 <h2 class="section-heading">Contact Us</h2>
                 <p>
                     <span class="glyphicon glyphicon-earphone"></span>
@@ -38,7 +37,7 @@
 
 <footer class="footer" text align = "center" style="background-color: powderblue;font-family: latto"; >
   <div class="container">
-  <p class="copyright"> Copyright &copy; Vipath.lk 2017. All Rights Reserved.</p> 
+  <p class="copyright" > Copyright &copy; Vipath.lk 2017. All Rights Reserved.</p> 
   </div>
 
    

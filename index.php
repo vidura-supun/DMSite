@@ -42,7 +42,7 @@
                     <h1>Vipath.lk</h1>
                     <p><font size="90" color="white">Stay Alert! Be Safe!</font>
                     </p>
-                    <a href="#" class="btn btn-primary btn-lg">Report now</a>
+                    <a href="report.php" class="btn btn-primary btn-lg">Report now</a>
                 </div>
             </div>
         </header>

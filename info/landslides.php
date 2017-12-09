@@ -1,12 +1,6 @@
 <html>
 <title>land slides</title>
-<?php
- 
- include('authCheck/adminCheck.php');
-
-?>
-    <body background="images/back.jpg">
-
+    <body>
 			<h1>Before a landslide</h1>
 			<h2>Minimizing the risks from landslides</h2>
 			<p>Landslide risk can be minimized by various methods, including:</p>
@@ -64,10 +58,7 @@
 
 
 
-   
+
 
     </body>
  <html>
- <?php
-include('footer.php');
-?>
