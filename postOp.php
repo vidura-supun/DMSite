@@ -81,7 +81,7 @@
 
               if($user=='user' && isset($_SESSION['NIC'])){
                 if($_SESSION['NIC']==$arr['uid']){
-                echo '<a><button id="button1">Edit</button></a>
+                echo '<a href=""><button id="button1">Edit</button></a>
                 <a href="#"><button id="button2">Delete</button></a>';
                 }
                 else{
