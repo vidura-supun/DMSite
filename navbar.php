@@ -20,9 +20,9 @@
 
   <title></title>
 </head>
-<body>
+<body><div>
 <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation" style="opacity: 0.7;   background-color:black;">
-          <div class="container">
+          <div class="container" style="width:100%">
               <!-- Vipathlk and responsive toggle -->
               <div class="navbar-header" ">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -81,12 +81,13 @@
                   </div><!-- /.navbar-collapse -->
                   <?php
               if(isset($_SESSION['NIC'])){
-              echo '<div style="text-align:left"><a href="/DMSite/users/listPosts.php"><p  style="color:#f1c40f; "><b>Hi! ' . $_SESSION["Uname"] . '<b> </p></a>
+              echo '<div style="text-align:left"><a href="/DMSite/postOp.php"><p  style="color:#f1c40f; "><b>Hi! ' . $_SESSION["Uname"] . '<b> </p></a>
               <a href="editUser.php" style="color:white; "><button id="button1"> Edit</button></a> </div>';
               } 
               ?>
           </nav>
               </div><!-- /.container -->
+            </div>
 </body>
 </html>
 

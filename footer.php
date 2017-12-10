@@ -1,4 +1,5 @@
-
+<html>
+<head>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
@@ -14,10 +15,12 @@
     <!-- Custom Fonts from Google -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
         rel='stylesheet' type='text/css'>
+</head>
 
-<footer class="page-footer" >
+<body>
+<footer class="page-footer" style="width:1351px;margin-top:50px">
 
-
+<div>
         <div class="contact" >
             <div class="container" >
                 <h2 class="section-heading">Contact Us</h2>
@@ -39,6 +42,11 @@
   <div class="container">
   <p class="copyright" > Copyright &copy; Vipath.lk 2017. All Rights Reserved.</p> 
   </div>
+  <div>
 
    
 </footer>
+
+    </body>
+
+    </html>

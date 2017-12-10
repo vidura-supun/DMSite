@@ -1,7 +1,7 @@
 <?php
 
-$approval=$_POST["approval"];
-$id=$_POST["id"];
+$approval=$_GET["approval"];
+$id=$_GET["id"];
 
 
 require("admin-logging/db_connection.php");
@@ -18,4 +18,4 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-<?php header('Location: admin.php');?>
+<?php //header('Location: postOp.php');?>

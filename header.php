@@ -7,16 +7,13 @@
 
 
 	<style>
-		html,body{width:100%;height:100%;}
-                .fix_nav{margin-top:10%;}
-		.win_by_vipath{padding:3em 0em;text-align: center;margin:1.5em 1em;text-shadow:5px 5px 10px black;font-size:18px; background-color: grey;}
-.wrapper{line-height:12;}
-a:hover{text-decoration:none;}
+		
+         
 
 	</style>
 
 </head>
-<body>
+<body style="width:100%;height:100%;">
 
 <nav class="navbar navbar-default navbar-fixed-top" style="background:#eeefc6">
 
@@ -35,7 +32,9 @@ a:hover{text-decoration:none;}
         		<li><a style="color:#c0392b;"href="admin-logging/login/logout.php"><span class="glyphicon glyphicon-off" style="font-size:2.5em"></span></a></li>
       		</ul>
     	</div>
-
+		<div align="left" style="padding-left:30px">
+		<a href='postOp.php'><button class="button" id="button1" >Posts</button></a>
+		</div>
       <div align="right" >
       <a href='addUser.php'><button class="button" id="button3">Create new user</button></a>
       </a>

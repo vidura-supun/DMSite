@@ -10,14 +10,15 @@ if($user=='other'){
 <html><body style="margin-top: 200px; margin:bottom:100px;">
 <div style="margin-left:50px">
 <?php
-$subject=$_POST["subject"];
-$dtype=$_POST["dtype"];
-$dead=$_POST["dead"];
-$uid=$_POST["uid"];
-$lng=$_POST["lng"];
-$lat=$_POST["lat"];
-$address=$_POST["address"];
-$description=$_POST["description"];
+require('admin-logging/connection.php');
+$subject=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["subject"])));
+$dtype=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["dtype"])));
+$dead=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["dead"])));
+$uid=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["uid"])));
+$lng=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["lng"])));
+$lat=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["lat"])));
+$address=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["address"])));
+$description=mysqli_real_escape_string($myConn,trim(stripslashes($_POST["description"])));
 echo "Your ID : ".$uid;?><br> <?php
 echo "Casualities : ".$dead;?><br> <?php
 echo "Disaster : ".$dtype;?><br> <?php
