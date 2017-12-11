@@ -41,6 +41,6 @@
   </head>
 
   <body>
-    <div id='chart_div' style='width: 900px; height: 500px; padding: 50px ; border: 10px solid gray'></div>
+    <div id='chart_div' style='width: 75%; height: 500px; padding: 50px ; border: 10px solid gray;margin-left:auto; margin-right:auto'></div>
   </body>
 </html>

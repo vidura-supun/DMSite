@@ -74,15 +74,18 @@
               <br><br><br><br><br><br>';
               
               if($user=='admin'){
-              echo '<a><button id="button1">Edit</button></a>
-              <a href="#"><button id="button2">Delete</button></a>
-              <a href="approval.php?id=' .$arr['id'].'&approval=y"><button id="button3">Approve</button></a></div>';
+              echo '<a href="editPost.php?id=' .$arr['id'].'"><button id="button1">Edit</button></a>
+              <a href="post/delPost.php?' .$arr['uid']. '&' .$arr['id']. '"><button id="button2">Delete</button></a>';
+              if($arr['approval']=='y'){
+                echo '<a href="approval.php?id=' .$arr['id'].'&approval=y"><button id="button3">Approve</button></a></div>';
+  
+                }
               }
 
               if($user=='user' && isset($_SESSION['NIC'])){
                 if($_SESSION['NIC']==$arr['uid']){
-                echo '<a href=""><button id="button1">Edit</button></a>
-                <a href="#"><button id="button2">Delete</button></a>';
+                echo '<a href="href="editPost.php?id=' .$arr['id'].'""><button id="button1">Edit</button></a>
+                <a href="post/delPost.php?' .$arr['uid']. '&' .$arr['id']. '"><button id="button2">Delete</button></a>';
                 }
                 else{
                   header("Location: postOp.php");

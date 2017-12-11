@@ -43,13 +43,13 @@
                           <a href="index.php">Home</a>
                       </li>
                       <li class="active">
-                          <a href="#">about us</a>
+                         <a href="postOp.php">Posts</a>
                       </li>
                       <li class="dropdown">
-                          <a style="color:yellowGreen;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Disasters <span class="caret"></span></a>
+                          <a style="color:yellowGreen;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Disasters<span class="caret"></span></a>
                           <ul class="dropdown-menu" aria-labelledby="about-us">
-                              <li><a href="droughts or water cuts.php">Drougts</a></li>
-                              <li><a href="floods.php">Floods</a></li>
+                              <li><a href="../DMSite/info/droughts or water cuts.php">Drougts</a></li>
+                              <li><a href="../../floods.php">Floods</a></li>
                               <li><a href="fires.php">Fires</a></li>
                               <li><a href="landslides.php">Landslides</a></li>
                               <li><a href="powercuts.php">Power Outages</a></li>

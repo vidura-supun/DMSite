@@ -57,18 +57,8 @@
             <div class="container">
                 <h2 class="section-header">
                     <span class="glyphicon glyphicon-pushpin text-primary"></span>
-                    <br>Check if you're safe</h2>
-                <p class="lead text-muted">send your location to us and know that if you're safe from any natural disaster or incident from your area</p>
-                <form action="safe.php" method="post">
-                	<table align="center">
-                		<tr style="padding-top: 30 px">
-                			<td><h2><input type="text" name="danger"></h2></td>
-                			<td><p>&nbsp;&nbsp;&nbsp;&nbsp;</p></td>
-                			<td><input type="submit" name="" class="btn btn-primary btn-lg" value="Check Now"></td>
-                		</tr>
-                	</table>
-                </form>
-            </div>
+                    <br>Affected areas</h2>
+                    <?php require("map/index.php"); ?>            </div>
             </div>
         </section>
      

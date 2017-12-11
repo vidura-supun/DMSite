@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<footer class="page-footer" style="width:1351px;margin-top:50px">
+<footer class="page-footer" style="width:100%;margin-top:50px">
 
 <div>
         <div class="contact" >
