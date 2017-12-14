@@ -3,17 +3,10 @@
 <head>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     
-        <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+   
         <link href="css/custom.css" rel="stylesheet">
     
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
     
-        <!-- Custom Fonts from Google -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
             rel='stylesheet' type='text/css'>
         <link href="css/admin.css" rel="stylesheet">
@@ -48,15 +41,15 @@
                       <li class="dropdown">
                           <a style="color:yellowGreen;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Disasters<span class="caret"></span></a>
                           <ul class="dropdown-menu" aria-labelledby="about-us">
-                              <li><a href="../DMSite/info/droughts or water cuts.php">Drougts</a></li>
-                              <li><a href="../../floods.php">Floods</a></li>
-                              <li><a href="fires.php">Fires</a></li>
-                              <li><a href="landslides.php">Landslides</a></li>
-                              <li><a href="powercuts.php">Power Outages</a></li>
-                              <li><a href="storms.php">Storms</a></li>
-                              <li><a href="tsunami.php">Tsunami</a></li>
-                              <li><a href="accidents.php">Roadside Accidents</a></li>
-                          <</ul>
+                                  <li><a href="../DMSite/info/droughts or water cuts.php">Drougts</a></li>
+                              <li><a href="../DMSite/info/floods.php">Floods</a></li>
+                              <li><a href="../DMSite/info/fires.php">Fires</a></li>
+                              <li><a href="../DMSite/info/landslides.php">Landslides</a></li>
+                              <li><a href="../DMSite/info/powercuts.php">Power Outages</a></li>
+                              <li><a href="../DMSite/info/storms.php">Storms</a></li>
+                              <li><a href="../DMSite/info/tsunami.php">Tsunami</a></li>
+                              <li><a href="../DMSite/info/accidents.php">Roadside Accidents</a></li>
+                          </ul>
                           </li>
                           <li>
                           <?php 
@@ -86,7 +79,7 @@
               } 
               ?>
           </nav>
-              </div><!-- /.container -->
+              </div>
             </div>
 </body>
 </html>
